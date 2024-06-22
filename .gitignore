@@ -1,0 +1,20 @@
+# Node modules
+client/node_modules/
+server/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+client/.env
+server/.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+.idea/
+.vscode/
