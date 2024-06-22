@@ -23,7 +23,7 @@ const CardList = () => {
 
   const getUser = async () => {
     try {
-      const response = await Axios.get("https://ankit-assignment-03-6.onrender.com/read");
+      const response = await Axios.get("https://mern-api-2zkk.onrender.com/read");
       const usersWithLikeState = response.data.users.map(user => ({ ...user, liked: false }));
       setUser(usersWithLikeState);
     } catch (error) {
