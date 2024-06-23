@@ -37,7 +37,7 @@ const CardList = () => {
 
   const updateUser = async (id) => {
     try {
-      await Axios.put(`http://localhost:3001/update/${id}`, modelData);
+      await Axios.put(`https://mern-api-2zkk.onrender.com/update/${id}`, modelData);
       getUser(); // Refresh user list
     } catch (error) {
       console.error("Error updating user:", error);
@@ -46,7 +46,7 @@ const CardList = () => {
 
   const deleteUser = async (id) => {
     try {
-      await Axios.delete(`http://localhost:3001/delete/${id}`);
+      await Axios.delete(`https://mern-api-2zkk.onrender.com/delete/${id}`);
       getUser(); // Refresh user list
     } catch (error) {
       console.error("Error deleting user:", error);
